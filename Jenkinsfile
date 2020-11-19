@@ -1,13 +1,13 @@
 pipeline {
   agent any
   environment {
-    APPSYSID = '*********'
+    APPSYSID = 
     BRANCH = "${BRANCH_NAME}"
     CREDENTIALS = '*********'
     DEVENV = 'https://devinstance.service-now.com/'
     TESTENV = 'https://testinstance.service-now.com/'
     PRODENV = 'https://prodinstance.service-now.com/'
-    TESTSUITEID = '**********'
+    TESTSUITEID = 
   }
   stages {
     stage('Build') {
